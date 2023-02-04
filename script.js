@@ -30,9 +30,19 @@ searchIt.googleSearch = () => {
     });
 }
 
+searchIt.clearIt = () => {
+    const textElement = document.querySelector('textarea');
+    const clearButton = document.querySelector('.clear');
+    const linksUl = document.querySelector('.linksUl')
+    clearButton.addEventListener('click', (e) => {
+        textElement.value = '';
+    } )
+}
+
 // Init
 searchIt.init = () => {
-    searchIt.googleSearch()
+    searchIt.googleSearch();
+    searchIt.clearIt();
 }
 
 searchIt.init();
