@@ -1,7 +1,8 @@
 main {
-    background-color: #FFFFFF;
+    background-color: #FFFAFB;
     display: flex;
     justify-content: space-around;
+    height: 90vh;
 }
 
 section {
@@ -9,6 +10,7 @@ section {
     border-radius: 25px;
     gap: 20px;
     padding: 15px;
+    height: 50%;
 }
 
 .searchSection {
@@ -25,12 +27,17 @@ section {
 
 .instructionsSection {
     width: 45%;
+        span {
+            color: red;
+            font-weight: bold;
+        }
 }
 
 button {
     border: 2px solid #97CC4B;
     border-radius: 25px;
     padding: 5px 10px;
+    font-weight: bold;
         &:hover,
         &:focus {
             background-color: #1a535c;

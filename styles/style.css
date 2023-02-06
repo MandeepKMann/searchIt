@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Rokkitt&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -226,9 +227,26 @@ html {
   overflow: hidden;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Rokkitt", serif;
+  color: #FFFFFF;
+}
+
+h2,
+h3 {
+  color: #007A66;
+}
+
+p,
+label,
+button {
+  font-family: "Raleway", sans-serif;
+}
+
 header {
   height: 10vh;
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,18 +256,21 @@ header {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  background-color: #007A66;
+  margin-bottom: 25px;
 }
 header h1 {
   margin: 0 25px;
 }
 
 main {
-  background-color: #FFFFFF;
+  background-color: #FFFAFB;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  height: 90vh;
 }
 
 section {
@@ -257,6 +278,7 @@ section {
   border-radius: 25px;
   gap: 20px;
   padding: 15px;
+  height: 50%;
 }
 
 .searchSection {
@@ -279,11 +301,16 @@ section {
 .instructionsSection {
   width: 45%;
 }
+.instructionsSection span {
+  color: red;
+  font-weight: bold;
+}
 
 button {
   border: 2px solid #97CC4B;
   border-radius: 25px;
   padding: 5px 10px;
+  font-weight: bold;
 }
 button:hover, button:focus {
   background-color: #1a535c;
